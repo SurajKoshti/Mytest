@@ -1,5 +1,4 @@
 class PigLatin
-
   def self.translate(input)
     vowels=["a","e","i","o","u"]
     input = input.split(" ")
@@ -21,7 +20,6 @@ class PigLatin
   end
   pig_latin_str.join(" ")
   end
-
   def self.consonant(str)
     until str[0] == "a" || str[0] == "e" || str[0] == "i" || str[0] == "o" || ( str[0] == "u" && ( str[1] != "a" && str[1] != "e" && str[1] != "i" && str[1] != "o" && str[1] != "u" ) )  do
       starting_letter = str[0]
@@ -30,5 +28,4 @@ class PigLatin
     end
     str = str + "ay"
   end
-
 end
